@@ -213,6 +213,64 @@ header{
     border-radius: 400px;
        float: right;
 }
+
+.mySlides {
+    display:none;
+    animation-name: animi3;
+    animation-duration: 4s;
+}
+@keyframes animi1{
+    from{ left:50%;width:0px;height:100%}
+    to{left:0%;width:100%;height:100%}
+}
+@keyframes animi2{
+      from{ display:none;}
+    to{display:block;}
+}
+@keyframes animi3{
+    0% {opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+a{
+    text-decoration: none;
+    
+    
+}
+.link{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: grey;
+    
+}
+.heading{
+    width:100%;
+    height:100px;
+    line-height: 100px;
+}
+.design-image{
+    width:50px;
+    height: 50px;
+    padding: 10px;
+     transition: .6s;
+}
+.design-image:hover{
+    opacity:.5;
+    transition: .6s;
+  
+}
+.link1{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Lemon Milk,Arial;
+    color: white;
+    height: auto;
+   
+}
+.link1:hover{
+    color: lightsteelblue;
+}
 @media (max-width:768px){
     .name{
         width: 90%;
@@ -275,59 +333,11 @@ header{
      top:12px;
    left:10px;
     }
-}
-.mySlides {
-    display:none;
-    animation-name: animi3;
-    animation-duration: 4s;
-}
-@keyframes animi1{
-    from{ left:50%;width:0px;height:100%}
-    to{left:0%;width:100%;height:100%}
-}
-@keyframes animi2{
-      from{ display:none;}
-    to{display:block;}
-}
-@keyframes animi3{
-    0% {opacity:0;}
-    50%{opacity:1;}
-    100%{opacity:0;}
-}
-a{
-    text-decoration: none;
-    
-    
-}
-.link{
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: white;
-    color: grey;
-    
-}
-.heading{
-    width:100%;
-    height:100px;
-    line-height: 100px;
-}
-.design-image{
-    width:50px;
-    height: 50px;
-    padding: 10px;
-     transition: .6s;
-}
-.design-image:hover{
-    opacity:.5;
-    transition: .6s;
-  
-}
-.link1{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: Lemon Milk,Arial;
-    color: white;
-}
-.link1:hover{
-    color: lightsteelblue;
+    .link1{
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 10px;
+        
+        
+    }
 }
