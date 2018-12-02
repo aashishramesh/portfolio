@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Aashish R</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/logo1.png">
+        <link rel="stylesheet" href="css/style.css" />
+  
+              <script>
+                  
+
+
+                   function on()
+                   {
+                       document.getElementById("stay").style.display="block";
+                       document.getElementById("img").style.display="none";
+                   }
+                   function off()
+                   {
+                       document.getElementById("stay").style.display="none";
+                       document.getElementById("img").style.display="block";
+                   }
+                   function on1() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off1() {
+    document.getElementById("overlay").style.display = "none";
+}
+                   
+               </script>
+
+    </head>
+    <body  >
+        
+        <header  >
+           <div class="hd">
+            <div class="hd1"><img height="40px" width="40px" src="images/logo1.png" /></div>
+            <div class="hd2"><h2>Aashish R</h2></div>
+            </div> 
+        </header>
+       <!-- <div class="social">
+        <div id="img" onmouseover="on()">
+                H
+                </div>
+        <div id="stay"  >
+            srtrsdgrsdfdsfdfsdfsdfsdf
+            sdfdsf
+            sdfsdfsdfsdf
+            sdfsdfsd
+        </div>
+          </div>-->
+        <div class="base" onmouseover="off()">
+            <div class="base_1">
+                <div class="name">
+                    <p class="para1">Hello,<br>I am Aashish.</p>
+                    <p class="para2">UI/UX Designer and Developer</p>
+                 <!--<p class="para3">Following the profession of Aeronautics</p>-->
+                </div>  
+                <div class="name" >
+                    <div class="circle" style="max-width:500px">
+                        <img class="mySlides" src="images/own.png" >
+                        <img class="mySlides"  src="images/logo.png" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="base">
+            <div class="base_2">
+                <div class="heading">
+                    <h1>
+                       ABOUT ME
+                   </h1>
+                    </div>
+                <div class="pd">
+                    
+                    Trying to completely utilise and exploit my skills<br> as a professional in UI/UX designing <br>as well as for a profession in Aeronautics.
+                    <br>Working on propulsion theory and effect of coeffcient of drag and lift on aerofoil design and angle of attack
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="base">
+            <div style="padding-top: 70px" class="base_2">
+                <div class="heading"> 
+                    <h1>
+                    EXPERIENCE
+                  </h1>
+                </div>
+                <div  style="padding-top: 70px" class="para2">
+                    Proficiency in designing<br> using these softwares
+                </div>
+                <div style="padding-bottom: 40px" class="base">
+                    <img class="design-image" title="Photoshop" src="images/design/photoshop.png">
+                    <img class="design-image" title="Illustrator" src="images/design/illustrator.png">
+                    <img class="design-image" title="Adobe Premier" src="images/design/premier.png">
+                    <img class="design-image" title="Lightroom" src="images/design/lightroom.png">
+                    <img class="design-image" title="Adobe Acrobat" src="images/design/acrobat.png">
+                    <img class="design-image" title="Dreamweaver" src="images/design/dreamweaver.png">
+                    <img class="design-image" title="Solidworks" src="images/design/icons8-solidworks-50.png">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="base">
+            <div style="padding-top: 70px" class="base_2">
+                <div class="heading"> 
+                    <h1>
+                    PROJECTS
+                  </h1>
+                    </div>
+                <div class="projects" onclick="on1()">
+                    <img class="proj-img" src="images/website1.png">
+                    <img class="proj-img1" src="images/project/overlay.jpg">
+                    <div class="content">
+                        View
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="overlay" onclick="off1()">
+            <div id="text">
+               
+                <p class="para2">Official Website of Club Aerounwired</p>
+                <p style="padding: 20px;" class="para3">Completely designed and developed an official website <br>for Club Aerounwired,<br> for marketing as well as for news updates</p>
+                <a  href="https://aerounwired.github.io/" title="Go to website"><button class="link">Proceed to website</button> </a>
+            </div>
+        </div>
+        <div class="base">
+            <div style="padding-top: 70px" class="base_2">
+                <div class="heading"> 
+                    <h1>
+                    CONTACT ME
+                  </h1>
+                </div>
+                <div  style="padding-top: 70px" class="para2">
+                    Hit me up.<br>Ping me.<br>For i am here only
+                </div>
+                <div style="padding:20px" class="base">
+                    
+                    <a class="link1" href="mailto:aashish12345r@gmail.com" title="Mail me for any collaborations"><img style="width:25px;height:25px" src="images/project/gmail.png">&nbsp;aashish12345r@gmail.com</a>
+                    <a class="link1" href="tel:8547072792" title="Call"><img src="images/project/telephone.png">&nbsp;+91 8547072792</a>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script>
+         var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                }
+    </script>
+</html>
